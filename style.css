@@ -1,0 +1,51 @@
+.card-body{
+    max-height: 300px;
+    overflow: auto;
+}
+
+#intro{
+    padding-top: 10px;
+}
+#menu{
+    font-size: 14px;
+    
+}
+
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-image: url(https://thumbs.gfycat.com/LividPoliteDeer-size_restricted.gif);
+    background-size: cover;
+    position: relative;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    grid-gap: 20px;
+}
+
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+#mapid { 
+    height: 400px; width: 10 px;
+}
+.card-header{
+    background:  black;
+}
+.card-body{
+    background-image: url(https://thumbs.gfycat.com/LividPoliteDeer-size_restricted.gif);
+    background-size: cover;
+    box-shadow: 0 0 140px 10px rgba(0,0,0,.5);
+}
+
