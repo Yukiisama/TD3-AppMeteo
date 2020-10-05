@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="services/highlight.js" defer></script>
+    <script src="domain/hour.js" defer></script>
     <script src="domain/weather.js" defer></script>
     <script src="domain/map.js" defer></script>
     <script src="application/script.js" defer></script>
@@ -46,7 +47,7 @@
         <div class="row justify-content-center">
         <div class = "row">
             <div id="today" class="col">
-                <h1> Today's weather </h1>
+                <h1>Today </h1>
                 <div id="condition" input="text"></div>
                 <div id="humidity" input="text"></div>
                 <div id="tmp" input="text"></div>
@@ -60,6 +61,12 @@
                     <div id="tmin1" input="text"></div>
                     <div id="tmax1" input="text"></div>
                     <div id="img1" input="text"></div>
+                    <div id="hourly" class ="row">
+                        <div id="hour" input="text"></div>
+                        <div id="H_condition" input="text"></div>
+                        <div id="H_tmin" input="text"></div>
+                        <div id="H_tmax" input="text"></div>
+                    </div>
                 </div>
                 <div id="d+2" class="col">
                     <h1 id ="hd2"></h1>

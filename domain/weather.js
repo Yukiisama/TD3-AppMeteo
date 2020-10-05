@@ -61,6 +61,13 @@ class Weather {
         let node = document.getElementById("img" + dn);
         this.clearNode(node);
         node.appendChild(img);
+
+
+        // a ameliorer avec carousel
+        /*Object.keys(data.hourly_data).forEach(e => {
+                let hour = new Hour(data.hourly_data[e],e);
+                hour.showHour();
+        });*/
     }
     // penser à réduire le nb de champs et de faire une sorte de carousel
 }
