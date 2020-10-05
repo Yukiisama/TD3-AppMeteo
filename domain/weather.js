@@ -24,6 +24,7 @@ class Weather {
     }
 
     showCurrent() {
+        document.getElementById("tdh0").innerHTML      = "Maintenant";  
         document.getElementById("condition").innerHTML = this.json.current_condition.condition;
         document.getElementById("humidity").innerHTML  = "Humidity: " + this.json.current_condition.humidity;
         document.getElementById("tmp").innerHTML       = "Temperature: " + this.json.current_condition.tmp;
@@ -46,10 +47,9 @@ class Weather {
     }
 
     showNextDay(dayNumber){
-        let dn = dayNumber + 1;
-        let cond     = document.getElementById("condition" + dn);
-        let tmin     = document.getElementById("tmin"+ dn);
-        let tmax     = document.getElementById("tmax"+ dn);
+        let cond     = document.getElementById("condition" + dayNumber);
+        let tmin     = document.getElementById("tmin"+ dayNumber);
+        let tmax     = document.getElementById("tmax"+ dayNumber);
         let data     = this.json["fcst_day_" + dayNumber];
         tmin.innerHTML = "tmin: " + data.tmin;
         tmax.innerHTML = "tmax: " + data.tmax;
@@ -57,17 +57,17 @@ class Weather {
         
         let img = new Image();
         img.src = data.icon;
-        document.getElementById("hd" + dn).innerHTML  = data.day_long;     
-        let node = document.getElementById("img" + dn);
+        document.getElementById("hd" + dayNumber).innerHTML  = data.day_long;     
+        let node = document.getElementById("img" + dayNumber);
         this.clearNode(node);
         node.appendChild(img);
 
 
         // a ameliorer avec carousel
-        /*Object.keys(data.hourly_data).forEach(e => {
-                let hour = new Hour(data.hourly_data[e],e);
+        Object.keys(data.hourly_data).forEach(e => {
+                let hour = new Hour(data.hourly_data[e],e,dayNumber);
                 hour.showHour();
-        });*/
+        });
     }
     // penser à réduire le nb de champs et de faire une sorte de carousel
 }
