@@ -28,12 +28,12 @@
 </head>
 
 <body>
-    <div id="intro" class= "container">
+    <div id="intro">
         <div class="row justify-content-center">
             <p>Please Enter your City or Click on the map to get the weather</p>
         </div>
     </div>
-    <div id="menu" class= "container">
+    <div id="menu">
         <div class="row justify-content-center">
             <input type="text" id="city">
             <button type="button" onclick="city()">afficher</button>
@@ -44,204 +44,202 @@
         <div id="mapid"></div>
     </div>
     <div id="weather">
-        <div class ="container">
-            <div class="row justify-content-center">
-            <div class = "row">
-                <div id="today" class="col">
-                    <h1 id= tdh0></h1>
-                    <div id="condition" input="text"></div>
-                    <div id="humidity" input="text"></div>
-                    <div id="tmp" input="text"></div>
-                    <div id="img" input="text"></div>
+        <div class="row justify-content-center">
+        <div class = "row">
+            <div id="today" class="col">
+                <h1 id= tdh0></h1>
+                <div id="condition" input="text"></div>
+                <div id="humidity" input="text"></div>
+                <div id="tmp" input="text"></div>
+                <div id="img" input="text"></div>
+            </div>
+    
+            <div id="days" class= "row">
+                <div id="d+0" class="col">
+                    <h1 id ="hd0"></h1>
+                    <div id="condition0" input="text"></div>
+                    <div id="tmin0" input="text"></div>
+                    <div id="tmax0" input="text"></div>
+                    <div id="img0" input="text"></div>
+                    <div id="hourly0" class ="container">
+                        <div class="row align-items-start">
+                        <div id="d0h0"  input="text" ></div>
+                        <div id="d0h1"  input="text" ></div>
+                        <div id="d0h2"  input="text" ></div>
+                        <div id="d0h3"  input="text" ></div>
+                        <div id="d0h4"  input="text" ></div>
+                        <div id="d0h5"  input="text" ></div>
+                        <div id="d0h6"  input="text" ></div>
+                        <div id="d0h7"  input="text" ></div>
+                        <div id="d0h8"  input="text" ></div>
+                        <div id="d0h9"  input="text" ></div>
+                        <div id="d0h10" input="text" ></div>
+                        <div id="d0h11" input="text" ></div>
+                        <div id="d0h12" input="text" ></div>
+                        <div id="d0h13"  input="text" ></div>
+                        <div id="d0h13"  input="text" ></div>
+                        <div id="d0h14"  input="text" ></div>
+                        <div id="d0h15"  input="text" ></div>
+                        <div id="d0h16"  input="text" ></div>
+                        <div id="d0h17"  input="text" ></div>
+                        <div id="d0h18"  input="text" ></div>
+                        <div id="d0h19"  input="text" ></div>
+                        <div id="d0h20"  input="text" ></div>
+                        <div id="d0h21"  input="text" ></div>
+                        <div id="d0h22"  input="text" ></div>
+                        <div id="d0h23" input="text" ></div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
-        
-                <div id="days" class= "row">
-                    <div id="d+0" class="col">
-                        <h1 id ="hd0"></h1>
-                        <div id="condition0" input="text"></div>
-                        <div id="tmin0" input="text"></div>
-                        <div id="tmax0" input="text"></div>
-                        <div id="img0" input="text"></div>
-                        <div id="hourly0" class ="container">
-                            <div class="row align-items-start">
-                            <div id="d0h0"  input="text" ></div>
-                            <div id="d0h1"  input="text" ></div>
-                            <div id="d0h2"  input="text" ></div>
-                            <div id="d0h3"  input="text" ></div>
-                            <div id="d0h4"  input="text" ></div>
-                            <div id="d0h5"  input="text" ></div>
-                            <div id="d0h6"  input="text" ></div>
-                            <div id="d0h7"  input="text" ></div>
-                            <div id="d0h8"  input="text" ></div>
-                            <div id="d0h9"  input="text" ></div>
-                            <div id="d0h10" input="text" ></div>
-                            <div id="d0h11" input="text" ></div>
-                            <div id="d0h12" input="text" ></div>
-                            <div id="d0h13"  input="text" ></div>
-                            <div id="d0h13"  input="text" ></div>
-                            <div id="d0h14"  input="text" ></div>
-                            <div id="d0h15"  input="text" ></div>
-                            <div id="d0h16"  input="text" ></div>
-                            <div id="d0h17"  input="text" ></div>
-                            <div id="d0h18"  input="text" ></div>
-                            <div id="d0h19"  input="text" ></div>
-                            <div id="d0h20"  input="text" ></div>
-                            <div id="d0h21"  input="text" ></div>
-                            <div id="d0h22"  input="text" ></div>
-                            <div id="d0h23" input="text" ></div>
-                        </div>
-                        </div>
-                        </div>
+                <div id="d+1" class="col">
+                    <h1 id ="hd1"></h1>
+                    <div id="condition1" input="text"></div>
+                    <div id="tmin1" input="text"></div>
+                    <div id="tmax1" input="text"></div>
+                    <div id="img1" input="text"></div>
+                    <div id="hourly1" class ="container">
+                        <div class="row align-items-start">
+                        <div id="d1h0"  input="text" ></div>
+                        <div id="d1h1"  input="text" ></div>
+                        <div id="d1h2"  input="text" ></div>
+                        <div id="d1h3"  input="text" ></div>
+                        <div id="d1h4"  input="text" ></div>
+                        <div id="d1h5"  input="text" ></div>
+                        <div id="d1h6"  input="text" ></div>
+                        <div id="d1h7"  input="text" ></div>
+                        <div id="d1h8"  input="text" ></div>
+                        <div id="d1h9"  input="text" ></div>
+                        <div id="d1h10" input="text" ></div>
+                        <div id="d1h11" input="text" ></div>
+                        <div id="d1h12" input="text" ></div>
+                        <div id="d1h13"  input="text" ></div>
+                        <div id="d1h13"  input="text" ></div>
+                        <div id="d1h14"  input="text" ></div>
+                        <div id="d1h15"  input="text" ></div>
+                        <div id="d1h16"  input="text" ></div>
+                        <div id="d1h17"  input="text" ></div>
+                        <div id="d1h18"  input="text" ></div>
+                        <div id="d1h19"  input="text" ></div>
+                        <div id="d1h20"  input="text" ></div>
+                        <div id="d1h21"  input="text" ></div>
+                        <div id="d1h22"  input="text" ></div>
+                        <div id="d1h23" input="text" ></div>
                     </div>
-                    <div id="d+1" class="col">
-                        <h1 id ="hd1"></h1>
-                        <div id="condition1" input="text"></div>
-                        <div id="tmin1" input="text"></div>
-                        <div id="tmax1" input="text"></div>
-                        <div id="img1" input="text"></div>
-                        <div id="hourly1" class ="container">
-                            <div class="row align-items-start">
-                            <div id="d1h0"  input="text" ></div>
-                            <div id="d1h1"  input="text" ></div>
-                            <div id="d1h2"  input="text" ></div>
-                            <div id="d1h3"  input="text" ></div>
-                            <div id="d1h4"  input="text" ></div>
-                            <div id="d1h5"  input="text" ></div>
-                            <div id="d1h6"  input="text" ></div>
-                            <div id="d1h7"  input="text" ></div>
-                            <div id="d1h8"  input="text" ></div>
-                            <div id="d1h9"  input="text" ></div>
-                            <div id="d1h10" input="text" ></div>
-                            <div id="d1h11" input="text" ></div>
-                            <div id="d1h12" input="text" ></div>
-                            <div id="d1h13"  input="text" ></div>
-                            <div id="d1h13"  input="text" ></div>
-                            <div id="d1h14"  input="text" ></div>
-                            <div id="d1h15"  input="text" ></div>
-                            <div id="d1h16"  input="text" ></div>
-                            <div id="d1h17"  input="text" ></div>
-                            <div id="d1h18"  input="text" ></div>
-                            <div id="d1h19"  input="text" ></div>
-                            <div id="d1h20"  input="text" ></div>
-                            <div id="d1h21"  input="text" ></div>
-                            <div id="d1h22"  input="text" ></div>
-                            <div id="d1h23" input="text" ></div>
-                        </div>
-                        </div>
                     </div>
-                    <div id="d+2" class="col">
-                        <h1 id ="hd2"></h1>
-                        <div id="condition2" input="text"></div>
-                        <div id="tmin2" input="text"></div>
-                        <div id="tmax2" input="text"></div>
-                        <div id="img2" input="text"></div>
-                        <div id="hourly2" class ="container">
-                            <div class="row align-items-start">
-                            <div id="d2h0"  input="text" ></div>
-                            <div id="d2h1"  input="text" ></div>
-                            <div id="d2h2"  input="text" ></div>
-                            <div id="d2h3"  input="text" ></div>
-                            <div id="d2h4"  input="text" ></div>
-                            <div id="d2h5"  input="text" ></div>
-                            <div id="d2h6"  input="text" ></div>
-                            <div id="d2h7"  input="text" ></div>
-                            <div id="d2h8"  input="text" ></div>
-                            <div id="d2h9"  input="text" ></div>
-                            <div id="d2h10" input="text" ></div>
-                            <div id="d2h11" input="text" ></div>
-                            <div id="d2h12" input="text" ></div>
-                            <div id="d2h13"  input="text" ></div>
-                            <div id="d2h13"  input="text" ></div>
-                            <div id="d2h14"  input="text" ></div>
-                            <div id="d2h15"  input="text" ></div>
-                            <div id="d2h16"  input="text" ></div>
-                            <div id="d2h17"  input="text" ></div>
-                            <div id="d2h18"  input="text" ></div>
-                            <div id="d2h19"  input="text" ></div>
-                            <div id="d2h20"  input="text" ></div>
-                            <div id="d2h21"  input="text" ></div>
-                            <div id="d2h22"  input="text" ></div>
-                            <div id="d2h23" input="text" ></div>
-                        </div>
-                        </div>
+                </div>
+                <div id="d+2" class="col">
+                    <h1 id ="hd2"></h1>
+                    <div id="condition2" input="text"></div>
+                    <div id="tmin2" input="text"></div>
+                    <div id="tmax2" input="text"></div>
+                    <div id="img2" input="text"></div>
+                    <div id="hourly2" class ="container">
+                        <div class="row align-items-start">
+                        <div id="d2h0"  input="text" ></div>
+                        <div id="d2h1"  input="text" ></div>
+                        <div id="d2h2"  input="text" ></div>
+                        <div id="d2h3"  input="text" ></div>
+                        <div id="d2h4"  input="text" ></div>
+                        <div id="d2h5"  input="text" ></div>
+                        <div id="d2h6"  input="text" ></div>
+                        <div id="d2h7"  input="text" ></div>
+                        <div id="d2h8"  input="text" ></div>
+                        <div id="d2h9"  input="text" ></div>
+                        <div id="d2h10" input="text" ></div>
+                        <div id="d2h11" input="text" ></div>
+                        <div id="d2h12" input="text" ></div>
+                        <div id="d2h13"  input="text" ></div>
+                        <div id="d2h13"  input="text" ></div>
+                        <div id="d2h14"  input="text" ></div>
+                        <div id="d2h15"  input="text" ></div>
+                        <div id="d2h16"  input="text" ></div>
+                        <div id="d2h17"  input="text" ></div>
+                        <div id="d2h18"  input="text" ></div>
+                        <div id="d2h19"  input="text" ></div>
+                        <div id="d2h20"  input="text" ></div>
+                        <div id="d2h21"  input="text" ></div>
+                        <div id="d2h22"  input="text" ></div>
+                        <div id="d2h23" input="text" ></div>
                     </div>
-                    <div id="d+3" class="col">
-                        <h1 id ="hd3"></h1>
-                        <div id="condition3" input="text"></div>
-                        <div id="tmin3" input="text"></div>
-                        <div id="tmax3" input="text"></div>
-                        <div id="img3" input="text"></div>
-                        <div id="hourly3" class ="container">
-                            <div class="row align-items-start">
-                            <div id="d3h0"  input="text" ></div>
-                            <div id="d3h1"  input="text" ></div>
-                            <div id="d3h2"  input="text" ></div>
-                            <div id="d3h3"  input="text" ></div>
-                            <div id="d3h4"  input="text" ></div>
-                            <div id="d3h5"  input="text" ></div>
-                            <div id="d3h6"  input="text" ></div>
-                            <div id="d3h7"  input="text" ></div>
-                            <div id="d3h8"  input="text" ></div>
-                            <div id="d3h9"  input="text" ></div>
-                            <div id="d3h10" input="text" ></div>
-                            <div id="d3h11" input="text" ></div>
-                            <div id="d3h12" input="text" ></div>
-                            <div id="d3h13"  input="text" ></div>
-                            <div id="d3h13"  input="text" ></div>
-                            <div id="d3h14"  input="text" ></div>
-                            <div id="d3h15"  input="text" ></div>
-                            <div id="d3h16"  input="text" ></div>
-                            <div id="d3h17"  input="text" ></div>
-                            <div id="d3h18"  input="text" ></div>
-                            <div id="d3h19"  input="text" ></div>
-                            <div id="d3h20"  input="text" ></div>
-                            <div id="d3h21"  input="text" ></div>
-                            <div id="d3h22"  input="text" ></div>
-                            <div id="d3h23" input="text" ></div>
-                        </div>
-                        </div>
                     </div>
-                    <div id="d+4" class="col">
-                        <h1 id ="hd4"></h1>
-                        <div id="condition4" input="text"></div>
-                        <div id="tmin4" input="text"></div>
-                        <div id="tmax4" input="text"></div>
-                        <div id="img4" input="text"></div>
-                        <div id="hourly4" class ="container">
-                            <div class="row align-items-start">
-                            <div id="d4h0"  input="text" ></div>
-                            <div id="d4h1"  input="text" ></div>
-                            <div id="d4h2"  input="text" ></div>
-                            <div id="d4h3"  input="text" ></div>
-                            <div id="d4h4"  input="text" ></div>
-                            <div id="d4h5"  input="text" ></div>
-                            <div id="d4h6"  input="text" ></div>
-                            <div id="d4h7"  input="text" ></div>
-                            <div id="d4h8"  input="text" ></div>
-                            <div id="d4h9"  input="text" ></div>
-                            <div id="d4h10" input="text" ></div>
-                            <div id="d4h11" input="text" ></div>
-                            <div id="d4h12" input="text" ></div>
-                            <div id="d4h13"  input="text" ></div>
-                            <div id="d4h13"  input="text" ></div>
-                            <div id="d4h14"  input="text" ></div>
-                            <div id="d4h15"  input="text" ></div>
-                            <div id="d4h16"  input="text" ></div>
-                            <div id="d4h17"  input="text" ></div>
-                            <div id="d4h18"  input="text" ></div>
-                            <div id="d4h19"  input="text" ></div>
-                            <div id="d4h20"  input="text" ></div>
-                            <div id="d4h21"  input="text" ></div>
-                            <div id="d4h22"  input="text" ></div>
-                            <div id="d4h23" input="text" ></div>
-                        </div>
-                        </div>
+                </div>
+                <div id="d+3" class="col">
+                    <h1 id ="hd3"></h1>
+                    <div id="condition3" input="text"></div>
+                    <div id="tmin3" input="text"></div>
+                    <div id="tmax3" input="text"></div>
+                    <div id="img3" input="text"></div>
+                    <div id="hourly3" class ="container">
+                        <div class="row align-items-start">
+                        <div id="d3h0"  input="text" ></div>
+                        <div id="d3h1"  input="text" ></div>
+                        <div id="d3h2"  input="text" ></div>
+                        <div id="d3h3"  input="text" ></div>
+                        <div id="d3h4"  input="text" ></div>
+                        <div id="d3h5"  input="text" ></div>
+                        <div id="d3h6"  input="text" ></div>
+                        <div id="d3h7"  input="text" ></div>
+                        <div id="d3h8"  input="text" ></div>
+                        <div id="d3h9"  input="text" ></div>
+                        <div id="d3h10" input="text" ></div>
+                        <div id="d3h11" input="text" ></div>
+                        <div id="d3h12" input="text" ></div>
+                        <div id="d3h13"  input="text" ></div>
+                        <div id="d3h13"  input="text" ></div>
+                        <div id="d3h14"  input="text" ></div>
+                        <div id="d3h15"  input="text" ></div>
+                        <div id="d3h16"  input="text" ></div>
+                        <div id="d3h17"  input="text" ></div>
+                        <div id="d3h18"  input="text" ></div>
+                        <div id="d3h19"  input="text" ></div>
+                        <div id="d3h20"  input="text" ></div>
+                        <div id="d3h21"  input="text" ></div>
+                        <div id="d3h22"  input="text" ></div>
+                        <div id="d3h23" input="text" ></div>
+                    </div>
+                    </div>
+                </div>
+                <div id="d+4" class="col">
+                    <h1 id ="hd4"></h1>
+                    <div id="condition4" input="text"></div>
+                    <div id="tmin4" input="text"></div>
+                    <div id="tmax4" input="text"></div>
+                    <div id="img4" input="text"></div>
+                    <div id="hourly4" class ="container">
+                        <div class="row align-items-start">
+                        <div id="d4h0"  input="text" ></div>
+                        <div id="d4h1"  input="text" ></div>
+                        <div id="d4h2"  input="text" ></div>
+                        <div id="d4h3"  input="text" ></div>
+                        <div id="d4h4"  input="text" ></div>
+                        <div id="d4h5"  input="text" ></div>
+                        <div id="d4h6"  input="text" ></div>
+                        <div id="d4h7"  input="text" ></div>
+                        <div id="d4h8"  input="text" ></div>
+                        <div id="d4h9"  input="text" ></div>
+                        <div id="d4h10" input="text" ></div>
+                        <div id="d4h11" input="text" ></div>
+                        <div id="d4h12" input="text" ></div>
+                        <div id="d4h13"  input="text" ></div>
+                        <div id="d4h13"  input="text" ></div>
+                        <div id="d4h14"  input="text" ></div>
+                        <div id="d4h15"  input="text" ></div>
+                        <div id="d4h16"  input="text" ></div>
+                        <div id="d4h17"  input="text" ></div>
+                        <div id="d4h18"  input="text" ></div>
+                        <div id="d4h19"  input="text" ></div>
+                        <div id="d4h20"  input="text" ></div>
+                        <div id="d4h21"  input="text" ></div>
+                        <div id="d4h22"  input="text" ></div>
+                        <div id="d4h23" input="text" ></div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-</div>
+    </div>
+    </div>
     <div id="data" class= "container">
         <div class="card">
             <div class="card-header">
