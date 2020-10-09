@@ -44,6 +44,13 @@ function scroll(id, i){
 
 }
 function city(){
-    let w   = new Weather(document.getElementById("city").value);
+    let data = document.getElementById("city").value;
+    if (!isNaN(data)){
+        let postalSearch = new Postal(data);
+    }
+    else
+    {
+       let w = new Weather(data);
+    }
 }
 
