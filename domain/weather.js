@@ -57,7 +57,7 @@ class Weather {
         
         let img = new Image();
         img.src = data.icon;
-        document.getElementById("hd" + dayNumber).innerHTML  = data.day_long;     
+        document.getElementById("hd" + dayNumber).innerHTML  =  data.day_long;     
         let node = document.getElementById("img" + dayNumber);
         this.clearNode(node);
         node.appendChild(img);

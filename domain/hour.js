@@ -6,7 +6,7 @@ class Hour{
     }
     showHour(){
         console.log("d" + this.day + "h" + this.hour.split('H')[0]);
-        if (document.getElementById("d" + this.day + "h" + this.hour.split('H')[0]) != null){
+        if (document.getElementById("d" + this.day + "h" + this.hour.split('H')[0]) != null){ // Debug
             let result = this.hour + "\n" + this.data.DPT2m + " - " + this.data.TMP2m + " °C " ;
             document.getElementById("d" + this.day + "h" + this.hour.split('H')[0]).innerHTML = result;
         }
