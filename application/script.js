@@ -2,8 +2,10 @@ const NBDAYS = 5;
 let map = new Map();
 let scr = [false, false, false, false, false];
 
+
 initDaysDiv();
 setInterval(scrollAllHours,1000);
+setInterval(getAvailablesCities,500);
 
 function scrollAllHours(){
     for (let i = 0; i < 5; i++)
@@ -53,4 +55,6 @@ function city(){
        let w = new Weather(data);
     }
 }
+
+
 

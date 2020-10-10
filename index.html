@@ -19,8 +19,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script src="services/highlight.js" defer></script>
+    <script src="services/completion.js" defer></script>
     <script src="domain/hour.js" defer></script>
     <script src="domain/weather.js" defer></script>
     <script src="domain/postal.js" defer></script>
@@ -31,12 +31,13 @@
 <body>
     <div id="intro">
         <div class="row justify-content-center">
-            <p>Please Enter your City or Click on the map to get the weather</p>
+            <p>Please Enter your City, or your postcode or simply click on the map to get the weather</p>
         </div>
     </div>
     <div id="menu">
         <div class="row justify-content-center">
-            <input type="text" id="city">
+            <input type="text" id="city" list= "cityList" autocomplete="off">
+            <datalist id = "cityList"></datalist>
             <button type="button " onclick="city()">afficher</button>
         </div>
     </div>
