@@ -7,7 +7,7 @@ function noDuplicates(tab, isText){
 function autoComplete(completionTab, isText){
     const list = document.getElementById('cityList');
     list.querySelectorAll('*').forEach(n => n.remove());
-    let tab = noDuplicates(completionTab.cities);
+    let tab = noDuplicates(completionTab.cities, isText);
     tab.forEach(element => {
         let option = document.createElement('option');
         option.value = element;
