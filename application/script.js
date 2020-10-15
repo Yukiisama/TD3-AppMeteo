@@ -1,6 +1,6 @@
 const NBDAYS = 5;
-let map = new Map();
-let scr = [false, false, false, false, false];
+const map = new Map();
+let scrollDown = [false, false, false, false, false];
 
 
 initDaysDiv();
@@ -28,19 +28,19 @@ function initDaysDiv(){
 }
 
 function scroll(id, i){
-    if (!scr[i]){
+    if (!scrollDown[i]){
        document.getElementById(id).scrollTop += document.getElementById(id).clientHeight /2;
        let current = document.getElementById(id).scrollTop;
        let max     = document.getElementById(id).scrollHeight - document.getElementById(id).clientHeight;
        if (current == max && current != 0 && max != 0){
-            scr[i] = true;
+            scrollDown[i] = true;
        }
     }
     else{
         let x = document.getElementById(id).scrollTop -= document.getElementById(id).clientHeight /2;
         if (x <= 0){
             document.getElementById(id).scrollTop = 0;
-            scr[i] = false;
+            scrollDown[i] = false;
         }
     }
 

@@ -17,7 +17,7 @@ function autoComplete(completionTab, isText){
 }
 
 
-//VOIR POUR ESSAYER AVEC https://vicopo.selfbuild.fr/cherche/
+
 function getAvailablesCities(){
     //const url = 'https://www.prevision-meteo.ch/services/json/list-cities';
     /* if I didn't have CORS issues, thats what i would have done, but they didn't allow access control allow origin*/
