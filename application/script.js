@@ -19,7 +19,6 @@ function initDaysDiv(){
         aligned.className = "row align-items-start";
         for (let h = 0; h < 24; h++){
             let hourDiv = document.createElement('div');
-            hourDiv.style = "padding-left: 5px;margin-left: 10px;";
             hourDiv.id = "d" + i + "h" + h; 
             aligned.appendChild(hourDiv);
         }
