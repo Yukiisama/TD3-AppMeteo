@@ -16,11 +16,29 @@ class Weather {
                 if (this.json.current_condition)
                     this.showCurrent();
                 this.showNextDays();
+                chart(this.getTemperaturesTab(true), this.getTemperaturesTab(false), this.getDaysTab());
             })
             .catch((err) => console.log(err));
         return meteo;
     }
     
+    getTemperaturesTab(ismin){
+        let tab = [];
+        for (let i = 0; i < 5; i++)
+            if (this.json["fcst_day_" + i]){
+                if (ismin) tab.push(parseInt(this.json["fcst_day_" + i].tmin));
+                else tab.push(parseInt(this.json["fcst_day_" + i].tmax));
+            }
+        return tab;
+    }
+
+    getDaysTab(){
+        let tab = [];
+        for (let i = 0; i < 5; i++)
+            if (this.json["fcst_day_" + i])
+                tab.push(this.json["fcst_day_" + i].day_long);
+        return tab;
+    }
     showJsonData(){
         document.getElementById("collapseData").innerHTML = "<pre>" + syntaxHighlight(JSON.stringify(this.json, undefined, '\t')) +"</pre>";
     }
