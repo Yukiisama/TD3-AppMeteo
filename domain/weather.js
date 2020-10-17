@@ -11,6 +11,8 @@ class Weather {
             .then((json) => {
                 this.json = json;
                 this.showJsonData();
+                if (this.json.errors)
+                    return;
                 if (this.json.current_condition)
                     this.showCurrent();
                 this.showNextDays();
