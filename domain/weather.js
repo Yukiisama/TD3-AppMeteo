@@ -1,13 +1,19 @@
 class Weather {
-    constructor(city) {
+    constructor(city, lat, lng) {
         this.url = "https://www.prevision-meteo.ch/services/json/";
         this.city = city;
         this.json = undefined;
+        this.lat = lat;
+        this.lng = lng;
         this.requestJson();
     }
 
     requestJson() {
-        let meteo = fetch(this.url + this.city).then((resp) => { return resp.json(); })
+        let url = this.url + this.city;
+        if (this.lat != undefined && this.lng != undefined){
+            url = this.url + "lat=" + this.lat + "lng=" + this.lng; 
+        }
+        let meteo = fetch(url).then((resp) => { return resp.json(); })
             .then((json) => {
                 this.json = json;
                 this.showJsonData();

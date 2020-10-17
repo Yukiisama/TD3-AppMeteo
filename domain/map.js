@@ -35,7 +35,7 @@ class Map {
             if (json.address != undefined && json.address.city != undefined){
                 document.getElementById("city").value = json.address.city;
                 console.log(document.getElementById("city").value)
-                new Weather(document.getElementById("city").value);
+                new Weather(document.getElementById("city").value, lat, lng);
              }
         })
         .catch((err) => console.log(err));

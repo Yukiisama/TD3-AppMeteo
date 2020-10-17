@@ -53,7 +53,7 @@ function city(){
         }
         else
         {
-        let w = new Weather(data);
+        let w = new Weather(data,undefined,undefined);
         }
     }
     old_city = data;

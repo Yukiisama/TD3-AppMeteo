@@ -11,7 +11,7 @@ class Postal {
                 .then(json => 
                     {
                         if (json.cities[0]){
-                            let w = new Weather(json.cities[0].city);
+                            let w = new Weather(json.cities[0].city,undefined,undefined);
                             document.getElementById("city").value = json.cities[0].city; 
                         }
                     })
