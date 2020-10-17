@@ -4,14 +4,28 @@ function noDuplicates(tab, isText){
     return [...set];
 }
 
+
+/* When you use datalist, behaviors navigators are differents.
+ * Firefox has unlimited size datalist, but Chrome hasn't (512)
+ */
+const max_autocompleteChrome = 512;
+
 function autoComplete(completionTab, isText){
     const list = document.getElementById('cityList');
-    list.querySelectorAll('*').forEach(n => n.remove());
     let tab = noDuplicates(completionTab.cities, isText);
+    if (tab.length >= max_autocompleteChrome){
+        list.querySelectorAll('*').forEach(n => n.remove());
+        return;
+    }
     tab.forEach(element => {
         let option = document.createElement('option');
         option.value = element;
-        list.appendChild(option);
+        ispresent = false;
+        for (c of list.childNodes)
+            if (c.value == element)
+                ispresent = true;    
+        if(!ispresent)
+            list.appendChild(option);
     });
 
 }

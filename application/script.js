@@ -44,15 +44,19 @@ function scroll(id, i){
     }
 
 }
+let old_city = undefined;
 function city(){
     let data = document.getElementById("city").value;
-    if (!isNaN(data)){
-        let postalSearch = new Postal(data);
+    if(old_city != data){
+        if (!isNaN(data)){
+            let postalSearch = new Postal(data);
+        }
+        else
+        {
+        let w = new Weather(data);
+        }
     }
-    else
-    {
-       let w = new Weather(data);
-    }
+    old_city = data;
 }
 
 
