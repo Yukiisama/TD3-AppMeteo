@@ -1,6 +1,6 @@
 function noDuplicates(tab, isText){
     let set = new Set();
-    tab.forEach(element => set.add((isText) ? element.city : element.code));
+    tab.forEach(element => set.add((isText) ? element.city.split(/(\d+)/)[0] : element.code));
     return [...set];
 }
 
