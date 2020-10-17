@@ -80,8 +80,8 @@ class Weather {
         let tmin     = document.getElementById("tmin"+ dayNumber);
         let tmax     = document.getElementById("tmax"+ dayNumber);
         let data     = this.json["fcst_day_" + dayNumber];
-        tmin.innerHTML = "tmin: " + data.tmin;
-        tmax.innerHTML = "tmax: " + data.tmax;
+        tmin.innerHTML = "tmin: " + data.tmin + "°C";
+        tmax.innerHTML = "tmax: " + data.tmax + "°C";
         cond.innerHTML = data.condition;
         
         let img = new Image();
